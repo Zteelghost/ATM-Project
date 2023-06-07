@@ -17,7 +17,6 @@ void RegisterUser() {
     std::cin >> ReverifyRegisteredPassword; std::cout << std::endl;
     
     if(RegisteredPassword == ReverifyRegisteredPassword && RegisteredUsername == ReverifyRegisteredUsername) {
-        // Write Username and password to respective files
         std::ofstream WriteUsername("Usernames.txt");
         WriteUsername << RegisteredUsername << "\n" << std::endl;
         WriteUsername.close();
