@@ -1,16 +1,16 @@
 #include <iostream>
-#include <string>
 #include "includes/account.h"
 #include "includes/RegisterUser.h"
 #include "includes/AccountVerifier.h"
 
-char ChoiceSelection1;
+int ChoiceSelection1;
 
 int main() {
     std::cout << "Hello, welcome to ATM! Please select from the list below!" << std::endl;
     std::cout << "Press 1 to login to your account." << std::endl;
     std::cout << "Press 2 to register an account with us." << std::endl;
-
+    std::cin >> ChoiceSelection1;
+    
     if(ChoiceSelection1 == 1) {
         std::cout << "Please enter your Username, and Password below.";
         std::cout << "Username: \n";
